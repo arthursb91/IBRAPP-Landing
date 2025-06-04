@@ -5,8 +5,10 @@ import DeadlineSection from "@/components/DeadlineSection";
 import RequirementsSection from "@/components/RequirementsSection";
 import ProcessSection from "@/components/ProcessSection";
 import JobsSection from "@/components/JobsSection";
+import InscricaoSection from "@/components/InscricaoSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
+import PrivacyPopup from "@/components/PrivacyPopup";
 
 const Index = () => {
   return (
@@ -17,8 +19,10 @@ const Index = () => {
       <RequirementsSection />
       <ProcessSection />
       <JobsSection />
+      <InscricaoSection />
       <FinalCTASection />
       <Footer />
+      <PrivacyPopup />
     </div>
   );
 };

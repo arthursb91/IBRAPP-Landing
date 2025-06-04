@@ -3,6 +3,10 @@ import { AlertTriangle, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const FinalCTASection = () => {
+  const openEdital = () => {
+    window.open('https://seletivoguamare.ibrapp.com/wp-content/uploads/2024/01/IBRAPP_MARCA-02.png', '_blank');
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -33,6 +37,7 @@ const FinalCTASection = () => {
           <div className="animate-fade-in delay-400">
             <Button 
               size="lg" 
+              onClick={openEdital}
               className="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-12 py-4 rounded-full text-xl transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               <FileDown className="w-6 h-6 mr-3" />

@@ -1,4 +1,6 @@
 
+import PolicyDialog from "./PolicyDialog";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -11,18 +13,17 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-8 animate-fade-in delay-200">
-            <a 
-              href="#" 
-              className="text-gray-400 hover:text-white transition-colors duration-200 hover:underline"
-            >
-              Política de Privacidade
-            </a>
-            <a 
-              href="#" 
-              className="text-gray-400 hover:text-white transition-colors duration-200 hover:underline"
-            >
-              Política de Cookies
-            </a>
+            <PolicyDialog title="Política de Privacidade" type="privacy">
+              <button className="text-gray-400 hover:text-white transition-colors duration-200 hover:underline">
+                Política de Privacidade
+              </button>
+            </PolicyDialog>
+            
+            <PolicyDialog title="Política de Cookies" type="cookies">
+              <button className="text-gray-400 hover:text-white transition-colors duration-200 hover:underline">
+                Política de Cookies
+              </button>
+            </PolicyDialog>
           </div>
         </div>
       </div>

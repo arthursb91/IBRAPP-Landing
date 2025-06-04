@@ -41,20 +41,20 @@ const ProcessSection = () => {
           {steps.map((step, index) => (
             <div 
               key={step.title}
-              className="text-center animate-fade-in group"
+              className="text-center animate-fade-in group relative"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              {/* Step Number */}
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-all duration-300 group-hover:scale-110">
-                  <step.icon className="w-10 h-10 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-teal-300 text-teal-800 rounded-full flex items-center justify-center text-sm font-bold">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 h-full group-hover:bg-white/20 transition-all duration-300 relative">
+                {/* Step Number */}
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-teal-300 text-teal-800 rounded-full flex items-center justify-center text-sm font-bold z-10">
                   {index + 1}
                 </div>
-              </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 h-full group-hover:bg-white/20 transition-all duration-300">
+                {/* Icon */}
+                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-white/30 transition-all duration-300 group-hover:scale-110">
+                  <step.icon className="w-8 h-8 text-white" />
+                </div>
+
                 <h3 className="text-xl font-bold mb-4 group-hover:text-teal-200 transition-colors duration-300">
                   {step.title}
                 </h3>
@@ -65,7 +65,7 @@ const ProcessSection = () => {
 
               {/* Connector Line (except for last item) */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-white/30 transform translate-x-4 translate-y-10"></div>
+                <div className="hidden lg:block absolute top-1/2 left-full w-8 h-0.5 bg-white/30 transform -translate-y-1/2"></div>
               )}
             </div>
           ))}
