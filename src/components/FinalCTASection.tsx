@@ -1,10 +1,9 @@
-
 import { AlertTriangle, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const FinalCTASection = () => {
   const openEdital = () => {
-    window.open('https://seletivoguamare.ibrapp.com/wp-content/uploads/2024/01/IBRAPP_MARCA-02.png', '_blank');
+    window.open('https://seletivoguamare.ibrapp.com/wp-content/uploads/2025/06/EDITAL-No-001-2025.pdf', '_blank');
   };
 
   return (

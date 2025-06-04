@@ -3,6 +3,15 @@ import { Calendar, Clock, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const DeadlineSection = () => {
+  const scrollToForm = () => {
+    const formSection = document.getElementById('inscricao-form');
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="py-20 bg-gradient-to-br from-teal-600 to-teal-700 text-white relative overflow-hidden">
       {/* Background decorative elements */}
@@ -52,6 +61,7 @@ const DeadlineSection = () => {
         <div className="text-center animate-fade-in delay-600">
           <Button 
             size="lg" 
+            onClick={scrollToForm}
             className="bg-white text-teal-700 hover:bg-gray-100 font-semibold px-12 py-4 rounded-full text-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             <AlertTriangle className="w-6 h-6 mr-3" />

@@ -1,4 +1,3 @@
-
 import { CheckCircle, FileText, Calendar, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -25,6 +24,10 @@ const RequirementsSection = () => {
       description: "Cumprir todas as determinações do edital."
     }
   ];
+
+  const openEdital = () => {
+    window.open('https://seletivoguamare.ibrapp.com/wp-content/uploads/2025/06/EDITAL-No-001-2025.pdf', '_blank');
+  };
 
   return (
     <section className="py-20 bg-white">
@@ -77,6 +80,7 @@ const RequirementsSection = () => {
           <Button 
             size="lg" 
             variant="outline"
+            onClick={openEdital}
             className="border-2 border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105"
           >
             <FileText className="w-5 h-5 mr-2" />

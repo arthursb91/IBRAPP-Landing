@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Clock, FileDown, UserPlus, User, Calendar, MapPin, Phone, Mail, Star } from "lucide-react";
 
@@ -13,7 +12,7 @@ const HeroSection = () => {
   };
 
   const openEdital = () => {
-    window.open('https://seletivoguamare.ibrapp.com/wp-content/uploads/2024/01/IBRAPP_MARCA-02.png', '_blank');
+    window.open('https://seletivoguamare.ibrapp.com/wp-content/uploads/2025/06/EDITAL-No-001-2025.pdf', '_blank');
   };
 
   return (
