@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Clock, FileDown, UserPlus } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="min-h-screen bg-gradient-to-br from-teal-600 to-teal-700 text-white relative overflow-hidden">
+  return <section className="min-h-screen bg-gradient-to-br from-teal-600 to-teal-700 text-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white rounded-full animate-pulse"></div>
@@ -43,18 +40,11 @@ const HeroSection = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-600">
-            <Button 
-              size="lg" 
-              className="bg-white text-teal-700 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
+            <Button size="lg" className="bg-white text-teal-700 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <UserPlus className="w-5 h-5 mr-2" />
               Inscreva-se Agora →
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-700 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105"
-            >
+            <Button size="lg" variant="outline" className="border-2 border-white hover:bg-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 text-emerald-700">
               <FileDown className="w-5 h-5 mr-2" />
               Baixar Edital
             </Button>
@@ -77,8 +67,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
