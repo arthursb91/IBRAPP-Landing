@@ -1,4 +1,3 @@
-
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import DeadlineSection from "@/components/DeadlineSection";
@@ -9,10 +8,8 @@ import InscricaoSection from "@/components/InscricaoSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
 import PrivacyPopup from "@/components/PrivacyPopup";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen my-[7px] py-0">
       <HeroSection />
       <AboutSection />
       <DeadlineSection />
@@ -23,8 +20,6 @@ const Index = () => {
       <FinalCTASection />
       <Footer />
       <PrivacyPopup />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

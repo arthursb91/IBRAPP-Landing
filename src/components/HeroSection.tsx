@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-white rounded-full animate-pulse delay-500"></div>
       </div>
       
-      <div className="container mx-auto px-6 pt-20 pb-32 relative z-10 py-0">
+      <div className="container pt-20 pb-32 relative z-10 mx-0 my-0 px-[24px] py-0">
         <div className="flex items-center min-h-[80vh]">
           {/* Left Content - 65% */}
           <div className="w-[65%] text-left animate-fade-in">
@@ -73,7 +73,7 @@ const HeroSection = () => {
           {/* Right Image - 35% */}
           <div className="w-[35%] flex justify-end items-end animate-fade-in delay-800 h-full">
             <div className="relative h-full flex items-end">
-              <img src="/lovable-uploads/33ce33e3-6787-422e-9e52-58cd1b186011.png" alt="Pessoa feliz sendo contratada" className="max-w-full h-auto max-h-[80vh] object-contain" />
+              <img alt="Pessoa feliz sendo contratada" className="max-w-full h-auto max-h-[100vh] object-contain" src="/lovable-uploads/7f3b01a0-cd19-4274-9bc5-11b9dd1fd82e.jpg" />
             </div>
           </div>
         </div>
