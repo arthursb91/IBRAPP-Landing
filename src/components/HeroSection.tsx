@@ -27,6 +27,15 @@ const HeroSection = () => {
         <div className="flex items-center min-h-[80vh]">
           {/* Left Content - 65% */}
           <div className="w-[65%] text-left animate-fade-in">
+            {/* Logo */}
+            <div className="mb-6 animate-fade-in">
+              <img 
+                src="/lovable-uploads/21388b99-ee46-44c3-bcb3-aa995e2d4c9a.png"
+                alt="IBRAPP Logo"
+                className="h-16 w-auto"
+              />
+            </div>
+
             {/* Status Badge */}
             <div className="mb-8">
               <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm">
@@ -59,30 +68,33 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 onClick={scrollToForm}
-                className="bg-white text-teal-700 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="bg-gradient-to-r from-white to-gray-100 text-teal-700 hover:from-gray-100 hover:to-gray-200 font-bold px-10 py-6 rounded-2xl text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl border-2 border-white/20 backdrop-blur-sm"
               >
-                <UserPlus className="w-5 h-5 mr-2" />
-                Inscreva-se Agora →
+                <UserPlus className="w-6 h-6 mr-3" />
+                Inscreva-se Agora
+                <span className="ml-2 text-2xl">→</span>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
                 onClick={openEdital}
-                className="border-2 border-white hover:bg-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 text-white hover:text-teal-700"
+                className="border-3 border-white/60 bg-white/10 backdrop-blur-sm hover:bg-white/20 font-bold px-10 py-6 rounded-2xl text-lg transition-all duration-300 hover:scale-105 text-white hover:text-white hover:shadow-2xl hover:border-white"
               >
-                <FileDown className="w-5 h-5 mr-2" />
+                <FileDown className="w-6 h-6 mr-3" />
                 Baixar Edital
               </Button>
             </div>
           </div>
 
           {/* Right Image - 35% */}
-          <div className="w-[35%] flex justify-center items-center animate-fade-in delay-800">
-            <img 
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=800&auto=format&fit=crop"
-              alt="Pessoa feliz sendo contratada"
-              className="max-w-full h-auto rounded-2xl shadow-2xl"
-            />
+          <div className="w-[35%] flex justify-end items-end animate-fade-in delay-800 h-full">
+            <div className="relative h-full flex items-end">
+              <img 
+                src="/lovable-uploads/33ce33e3-6787-422e-9e52-58cd1b186011.png"
+                alt="Pessoa feliz sendo contratada"
+                className="max-w-full h-auto max-h-[80vh] object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
